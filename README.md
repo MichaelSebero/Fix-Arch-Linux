@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://i.postimg.cc/sxz11L7T/Fix-Arch.png" />
+	<img src="https://i.postimg.cc/vBZbjd7F/Fix-Arch.png" />
 
 ## How to install Fix-Arch-Linux
 
