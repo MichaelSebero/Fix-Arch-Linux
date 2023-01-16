@@ -1,3 +1,6 @@
+<p align="center">
+	<img src="https://i.postimg.cc/sxz11L7T/Fix-Arch.png" />
+
 ## How to install Fix-Arch-Linux
 
 su
