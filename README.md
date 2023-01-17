@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://i.postimg.cc/R0xv9Dfh/Fix-Arch.png" />
+	<img src="https://i.postimg.cc/YCHvB8HR/Fix-Arch.png" />
 
 ## How to use Fix-Arch-Linux
 
