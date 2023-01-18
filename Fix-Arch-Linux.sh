@@ -10,7 +10,7 @@ esac
 read -r -p "Are you recieving the error 'failed to synchronize all databases' [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        rm -f /var/lib/pacman/sync/
+        rm -rf /var/lib/pacman/sync/
         ;;
     *)
         
@@ -28,7 +28,7 @@ esac
 read -r -p "Are you recieving the error 'failed to synchronize all databases' for Pamac? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        rm -r /var/lib/pacman/sync/ 
+        rm -rf /var/lib/pacman/sync/ 
         ;;
     *)
         
