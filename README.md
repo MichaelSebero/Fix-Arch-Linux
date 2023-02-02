@@ -11,5 +11,3 @@
 Paypal: https://tinyurl.com/yc78yen4
 
 My website: https://greenlightsuccess.webflow.io
-
-Element server: https://matrix.to/#/#coolrune-linux:matrix.org
