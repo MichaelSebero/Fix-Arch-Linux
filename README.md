@@ -6,3 +6,10 @@
 . Cycle through the diagnostic questions until you find your issue.
 
 . Once the issue is found, type "y" to apply the fix.
+
+## Donations and Contacts
+Paypal: https://tinyurl.com/yc78yen4
+
+My website: https://greenlightsuccess.webflow.io
+
+Element server: https://matrix.to/#/#coolrune-linux:matrix.org
