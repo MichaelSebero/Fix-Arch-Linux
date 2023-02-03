@@ -8,6 +8,6 @@
 . Once the issue is found, type "y" to apply the fix.
 
 ## Donations and Contacts
-Paypal: https://tinyurl.com/yc78yen4
+PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
 My website: https://greenlightsuccess.webflow.io
