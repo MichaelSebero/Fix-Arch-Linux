@@ -10,4 +10,4 @@
 ## Donations and Contacts
 PayPal: https://www.paypal.com/donate/?cmd=_donations&business=YYGU9JWJEE2AG
 
-My website: https://greenlightsuccess.webflow.io
+My Website: https://greenlightsuccess.webflow.io
