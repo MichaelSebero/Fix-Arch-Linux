@@ -61,12 +61,3 @@ case "$response" in
         
         ;;
 esac
-read -r -p "Are s6 services not launching on the system? [Y/N] " response
-case "$response" in
-    [yY][eE][sS]|[yY]) 
-        s6-db-reload
-        ;;
-    *)
-        
-        ;;
-esac
