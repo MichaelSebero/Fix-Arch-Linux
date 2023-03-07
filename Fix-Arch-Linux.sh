@@ -1,3 +1,5 @@
+su -c'pacman -Syu'
+
 read -r -p "Are you recieving the error 'unable to lock database' [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
@@ -37,7 +39,7 @@ esac
 read -r -p "Are you having GPG key errors? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        mv /etc/pacman.d/gnupg{,.bak} && pacman-key --init && pacman-key --populate archlinux && pacman-key --populate artix && pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key FBA220DFC880C036 && pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst' && pacman-key --populate manjaro
+        mv /etc/pacman.d/gnupg{,.bak} && pacman-key --init && pacman-key --populate archlinux && pacman-key --populate artix && pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com && pacman-key --lsign-key FBA220DFC880C036 && pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
         ;;
     *)
         
