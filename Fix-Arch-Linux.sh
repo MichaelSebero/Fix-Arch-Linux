@@ -1,4 +1,4 @@
-su -c'pacman -Syu'
+su -c'pacman -Syu --noconfirm --needed'
 
 read -r -p "Are you recieving the error 'unable to lock database' [Y/N] " response
 case "$response" in
