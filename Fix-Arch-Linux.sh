@@ -36,7 +36,7 @@ read -r -p "
 Are you recieving the error 'failed to synchronize all databases' for Pamac? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        rm -rf /var/lib/pacman/sync/ 
+        rm -rf /var/lib/pacman/sync/ && pacman -Sy
         ;;
     *)
         
