@@ -46,7 +46,7 @@ read -r -p "
 After an update can you not login to your desktop enviroment? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        pacman -Syyu && update-grub
+        update-grub
         ;;
     *)
         
