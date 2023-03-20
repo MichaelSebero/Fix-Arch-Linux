@@ -46,7 +46,17 @@ read -r -p "
 After an update can you not login to your desktop enviroment? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        update-grub
+        pacman -Syyu && update-grub
+        ;;
+    *)
+        
+        ;;
+esac
+read -r -p "
+After an update can you not login to your desktop enviroment? [NVIDIA] [Y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+        pacman -R nvidia-dkms && pacman -S nvidia-dkms && update-grub
         ;;
     *)
         
