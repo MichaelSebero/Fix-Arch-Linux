@@ -1,9 +1,11 @@
+#!/usr/bin/env bash
+
 pacman -Syu --noconfirm --needed
 
 read -r -p "
 ------------------------------------------------------------------------------------
 
-Are you recieving the error 'unable to lock database' [Y/N] " response
+Are you receiving the error 'Unable to lock database' [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
         rm /var/lib/pacman/db.lck
@@ -13,7 +15,7 @@ case "$response" in
         ;;
 esac
 read -r -p "
-Are you recieving the error 'failed to synchronize all databases' [Y/N] " response
+Are you receiving the error 'Failed to synchronize all databases' [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
         rm -rf /var/lib/pacman/sync/ && pacman -Sy
@@ -23,7 +25,7 @@ case "$response" in
         ;;
 esac
 read -r -p "
-Are you recieving the error 'unable to lock database' for Pamac? [Y/N] " response
+Are you receiving the error 'Unable to lock database' for Pamac? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
         rm /var/tmp/pamac/dbs/db.lck
@@ -46,7 +48,9 @@ read -r -p "
 After an update can you not login to your desktop enviroment? [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        update-grub
+    	if $(command -v update-grub); then
+        	update-grub
+        fi
         ;;
     *)
         
@@ -56,7 +60,12 @@ read -r -p "
 After an update can you not login to your desktop enviroment? [NVIDIA] [Y/N] " response
 case "$response" in
     [yY][eE][sS]|[yY]) 
-        pacman -R nvidia-dkms && pacman -S nvidia-dkms && update-grub
+		if [ $(pacman -Qs nvidia-dkms) ]; then
+        	pacman -R nvidia-dkms && pacman -S nvidia-dkms
+        fi
+    	if $(command -v update-grub); then
+        	update-grub
+        fi
         ;;
     *)
         
