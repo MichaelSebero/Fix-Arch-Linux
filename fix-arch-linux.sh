@@ -39,12 +39,12 @@ case ${commands[$selected]} in
         ;;
 
     "Fix 'unable to lock database' for pacman")
-        echo "$ROOT_PASSWORD" | su -c 'rm /var/lib/pacman/db.lck'
+        echo rm /var/lib/pacman/db.lck
         read -p "Press Enter to return to the menu..."
         ;;
-
+            
     "Fix 'unable to lock database' for pamac")
-        echo "$ROOT_PASSWORD" | su -c 'rm /var/tmp/pamac/dbs/db.lck'
+        echo rm /var/tmp/pamac/dbs/db.lck
         read -p "Press Enter to return to the menu..."
         ;;
 
