@@ -46,7 +46,7 @@ execute_command() {
             read -p "Press Enter to return to the menu..."
             ;;
         "Fix Clock Time")
-            echo "$ROOT_PASSWORD" | sudo ntpdate ntp.ubuntu.com
+            echo "$ROOT_PASSWORD" | su -c 'ntpdate ntp.ubuntu.com'
             read -p "Press Enter to return to the menu..."
             ;;
         "Fix Connectivity issues")
