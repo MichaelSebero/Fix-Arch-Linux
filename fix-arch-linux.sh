@@ -58,7 +58,7 @@ execute_command() {
             read -p "Press Enter to return to the menu..."
             ;;
         "Fix corrupted packages")
-            echo "$ROOT_PASSWORD" | su -c 'pacman -Syu --overwrite --noconfirm '*' $(pacman -Qnq)'
+            echo "$ROOT_PASSWORD" | su -c 'pacman -Qnq | xargs pacman -S --noconfirm --overwrite "*"'
             read -p "Press Enter to return to the menu..."
             ;;
         "Login issue fix")
