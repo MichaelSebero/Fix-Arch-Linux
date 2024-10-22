@@ -45,8 +45,8 @@ execute_command() {
             echo "$ROOT_PASSWORD" | su -c 'rm /var/tmp/pamac/dbs/db.lck'
             read -p "Press Enter to return to the menu..."
             ;;
-        "Fix Clock Time")
-            echo "$ROOT_PASSWORD" | su -c 'ntpdate ntp.ubuntu.com'
+        "Fix clock time")
+            echo "$ROOT_PASSWORD" | su -c 'time_str=$(curl -sI "http://google.com" | grep -i "^date:" | cut -d' ' -f2-) && date -s "$time_str" &>/dev/null && hwclock --systohc &>/dev/null'
             read -p "Press Enter to return to the menu..."
             ;;
         "Fix Connectivity issues")
